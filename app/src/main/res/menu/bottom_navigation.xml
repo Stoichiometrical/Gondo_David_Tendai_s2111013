@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    Author: David Tendai Gondo-->
+<!--    StudentID :s2111013-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home" />
+
+    <item
+        android:id="@+id/map"
+        android:title="Campuses"
+        android:icon="@drawable/school" />
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings" />
+
+
+</menu>

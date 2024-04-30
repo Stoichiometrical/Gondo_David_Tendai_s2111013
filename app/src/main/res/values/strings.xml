@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Weatherly</string>
+    <string-array name="campuses">
+        <item>Glasgow</item>
+        <item>London</item>
+        <item>NewYork</item>
+        <item>Oman</item>
+        <item>Mauritius</item>
+        <item>Bangladesh</item>
+    </string-array>
+    <string-array name="weather_categories">
+        <item>Today\'s Weather</item>
+        <item>Tommorrow\'s Weather</item>
+        <item>Future Forecast</item>
+    </string-array>
+</resources>

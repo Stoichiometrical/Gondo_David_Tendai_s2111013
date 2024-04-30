@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--    Author: David Tendai Gondo-->
+    <!--    StudentID :s2111013-->
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Weatherly" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/mainColor</item>
+        <item name="android:textColor" > @color/white</item>
+
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="Theme.Weatherly" parent="Base.Theme.Weatherly" />
+
+
+
+
+
+    <style name="Twist" parent="Base.Theme.Weatherly">
+        <item name="android:textColorPrimary">@color/mainColor</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColor" >@color/mainColor</item>
+
+    </style>
+
+    <style name="GridStyle" parent="Base.Theme.Weatherly">
+        <item name="android:textColor" > @color/mainColor</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+
+
+
+
+    <style name="BottomNavigationViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name='android:layout_marginBottom'>15dp</item>
+        <item name="android:textAppearance">@color/white</item>
+        <item name="android:background">@drawable/rounded_rectangle</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <style name="MTheme" parent="Base.Theme.Weatherly">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/mainColor</item>
+        <item name="android:textColor" > @color/white</item>
+
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+</resources>

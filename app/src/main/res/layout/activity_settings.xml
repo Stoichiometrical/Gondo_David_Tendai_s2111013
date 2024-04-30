@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    Author: David Tendai Gondo-->
+<!--    StudentID :s2111013-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.SettingsActivity">
+
+    <include
+        layout="@layout/student_id_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Settings"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Select Default Update Times"
+            android:textSize="18sp" />
+
+        <TimePicker
+            android:id="@+id/t1"
+            android:layout_width="231dp"
+            android:layout_height="174dp"
+            android:timePickerMode="spinner" />
+
+        <TimePicker
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:timePickerMode="spinner" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/location"
+        android:layout_width="245dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:text="Select Default Campus"
+            android:textSize="18dp" />
+
+        <Spinner
+
+            android:id="@+id/campuses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:entries="@array/campuses" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/toggleLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/location"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="71dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="Dark Mode"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light Mode"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="167dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/rounded_rectangle"
+        android:gravity="center"
+        android:onClick="saveSettings"
+        android:padding="10dp"
+        android:text="Save Settings"
+        android:textColor="@color/mainColor"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location"
+        app:layout_goneMarginTop="10dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
